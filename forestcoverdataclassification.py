@@ -17,8 +17,8 @@ from keras._tf_keras.keras.callbacks import EarlyStopping
 data = pd.read_csv("cover_data.csv")
 
 # Define feature columns and target variable
-X = data.iloc[:, :-1]  # All columns except the last one
-y = data.iloc[:, -1]   # Last column (target)
+X = data.iloc[:, :-1]
+y = data.iloc[:, -1] - 1  # Shift labels to start from 0
 
 # Split the dataset into training, validation, and test sets
 X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.4, random_state=42)
