@@ -3,7 +3,9 @@ Forest Cover Type Classification Using Deep Learning (TensorFlow/Keras)
 
 This project focuses on building a deep learning model to classify forest cover types based on geospatial data.
 
+
 Overview
+
 
 Developed a neural network using TensorFlow and Keras to predict forest cover types.
 
